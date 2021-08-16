@@ -1,4 +1,4 @@
-let listOfNumber=[2,23,4,6,10];
+/*let listOfNumber=[2,23,4,6,10];
 console.log( listOfNumber[1])
 ;console.log( listOfNumber[2]);
 console.log( listOfNumber[3]);
@@ -36,7 +36,7 @@ for(i=0;i<day1.events.length;i++){
     console.log(day1.events[i]);
 }
 
-
+*/
 // Create a function which takes two strings, and returns one string 
 // ex: it takes "yves", and "Iraguha", it returns "Iraguha Yves"
 console.log("A function which takes two string and retrn one sting");
@@ -59,6 +59,7 @@ console.log(myString("Ello"));
 
 // Create a function which inverts a string 
 // ex: if you give it "hello", it returns "olleh"
+console.log("A function which inverts a string")
 let reverse = (word)=>{
     return word.split("").reverse().join("");
 }
@@ -69,10 +70,30 @@ console.log(reverse("hello"));
 
 // Create a function which returns the number of vowels, and consnants which are in a string? 
 // ex: it takes "notebook", it returns {vowels:4, consonants:4}
+console.log("A function which returns the number of vowels, and consnants which are in a string");
 
+const consonants = ['b','c','d','f','g','h','j','k','l','m','n','r','p','q','s','t','v','w','x','y','z'];
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
+function countLetters(sentence) {
+  let counts = 0;
+  let count = 0;
+  for(let i = 0; i < vowels.length; i++) {
+    if(vowels.includes(sentence[i])) {
+      counts++;
+    }
+  }
+  for(let i = 0; i < consonants.length; i++) {
+    if(consonants.includes(sentence[i])) {
+      count++;
+    }
+  }
+  return console.log("The number of consonants:",count),
+  console.log("The number of vowels: ",counts);
+  
+}
 
-
+countLetters("notebook");
 
 
 // Create a function which accepts two numbers, and returns their sum
