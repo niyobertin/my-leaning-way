@@ -152,3 +152,36 @@ console.log(myArray(['hello world','karamoja','biraro','birere']));
 
 
 
+
+
+
+
+/*
+Write a range function that takes two arguments, start and end, and returns
+an array containing all the numbers from start up to (and including) end.
+Next, write a sum function that takes an array of numbers and returns the
+sum of these numbers. Run the example program and see whether it does
+indeed return 55*/
+
+function range(start, end, step = start < end) {
+    let array = [];
+  
+    if (step > 0) {
+      for (let i = start; i <= end; i += step) array.push(i);
+    } else {
+      for (let i = start; i >= end; i += step) array.push(i);
+    }
+    return array;
+  }
+  
+  function connect(array) {
+    let total = 0;
+    for (let value of array) {
+      total += value;
+    }
+    return total;
+  }
+  console.log(range(1,10));
+  console.log(connect(range(1,10)));
+
+  

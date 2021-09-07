@@ -1,0 +1,171 @@
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+#home1{
+    color: aliceblue;
+}
+header{
+    
+    display:flex ;
+    height:90px;
+    justify-content: center;
+    align-items: center;
+  
+}  
+#logo,#link  {
+    flex: 1;
+
+}
+#link a{
+    text-decoration: none;
+    margin: 10px;
+    color: rgb(139, 0, 0);
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+#back{
+    background-image: url("http://4.bp.blogspot.com/_vwCIB-LAcxk/S7smGQxRREI/AAAAAAAAARE/54USCRscvDo/s1600/IMG_4562.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-weight: 800;
+}
+#home{
+    text-align: center;
+    background-color: black;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(241, 241, 245);
+}
+#move{
+    background-color: black;
+    opacity: 0.7;
+    
+}
+#about{
+    margin:auto;
+    text-align: center;
+    width: 80%;
+    padding-top: 60px;
+    
+}
+#about h1{
+    
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+#about p{
+    font-size: larger;
+}
+#programs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    
+}
+#programs h1{
+    font-family:'Courier New', Courier, monospace;
+}
+#programs ul{
+    display: flex;
+    justify-content: space-between;
+   font-weight: 900;
+}
+#registration{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    
+    
+}
+#registration h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    
+}
+#gallery{
+    width: 80%;
+   margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    
+}
+#gallery h1{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    
+}
+#gallery img{
+    width: 150px;
+    height: 150px;
+    
+    
+}
+#image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+#image img{
+    margin: 10px;
+}
+img{
+    border: rgb(243, 221, 181) solid 1px;
+}
+footer{
+    background-color: #1D1F33;
+    
+}
+#foot{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#foot h1{
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace; ;
+    text-align: center;
+}
+#copy{
+color:white;
+text-align: right;
+margin-right: 20px;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.principle{
+    background-color: red;
+    display: flex;
+    margin: 40px 40px;
+    
+}
+.difference{
+    background-color: blue;
+    margin: 40px 40px;
+    height: 60vh;
+}
+.principle,.difference{
+    flex: 1; 
+}
