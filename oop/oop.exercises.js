@@ -5,9 +5,9 @@ class Peaple{
         this.fname = fname;
         this.lname = lname;
         this.age= age;
-        this.summary = function(){
-            return 'this is my summary';
-        }
+        // this.summary = function(){
+        //     return 'this is my summary';
+        // }
     }
 }
 
@@ -19,29 +19,44 @@ class Student extends Peaple{
 }
 
 const student1 = new Student('kagabo','Eric',12,2);
-function objectProperty(){
-    let prop = Object.keys(student1);
+function getObjectKeys(input){
+    let prop = Object.keys(input);
     return prop;
     
 }
 objectProperty();
 // 14. Write a JavaScript function to retrieve all the values of an object's properties.
-function objectValues(){
-    let valu = Object.values(student1);
+function getObjectValues(input){
+    let valu = Object.values(input);
     return valu;
 }
 objectValues();
 // 15. Write a JavaScript function to convert an object into a list of `[key, value]` pairs.
 
-function keyPair(){
-    let enter = Object.entries(student1);
+function keyPair(input){
+    let enter = Object.entries(input);
     return enter;
 }
-keyPair();
+keyPair(student1);
+
+const person ={name:'hello world'}
+
+keyPair(person)
 
 //16. Write a JavaScript function to get a copy of the object where the keys have become 
 //the values and the values the keys.
 
+function flipKeysAndValues(input){
+    const keys = getObjectKeys(input);
+    const values = getObjectValues(input);
+    const newObject = {};
+
+    for (let i=0;i<keys.length;i++){
+        newObject[values[i]] = keys[i]
+    }
+
+    return newObject;
+}
 
 
 
@@ -51,7 +66,9 @@ keyPair();
 
 
 function hasKey(st,key){
-    return st !==null && hasOwnProperty.call(st,key);
+    if(st[key]!==undefined){
+        return true
+    }return false
 
 }
 console.log(hasKey(student1,'red'));
