@@ -6,6 +6,12 @@ body{
     box-sizing: border-box;
    
 }
+#image2{
+    height: 65px;
+    width: 65px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
 #home1{
     color: aliceblue;
 }
@@ -31,7 +37,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 #back{
-    background-image: url("/image/home-image.JPG");
+    background-image: url("/home-image.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
